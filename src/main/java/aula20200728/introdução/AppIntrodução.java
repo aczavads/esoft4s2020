@@ -9,6 +9,8 @@ public class AppIntrodução {
 		
 		Elefante jumbo = new Elefante("Jumbo do Beto Carreiro");
 		jumbo.andar();
+		jumbo.andar();
+		jumbo.andar();
 		/*
 		String nome = "Ana Lúcia Beltrame Forte";
 		
