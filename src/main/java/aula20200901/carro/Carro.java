@@ -36,7 +36,7 @@ public class Carro {
 		return combustívelNoTanqueEmLitros;
 	}
 	public double getCapacidadeDoTanqueEmLitros() {
-		return capacidadeDoTanqueEmLitros;
+		return capacidadeDoTanqueEmLitros.getValor();
 	}
 
 }
