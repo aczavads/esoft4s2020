@@ -1,14 +1,17 @@
 package tiago_lopes_barcelos.aula20200825.carro;
 
 public class AppCarro {
-    
+
     public static void main(String[] args) {
-        Carro novo = new Carro();
+        Carro novo = new Carro(52.00);
         novo.abastecer(30.5);
+        novo.abastecer(10.5);
         novo.ligar();
         boolean carroLigado = novo.isLigado();
-        double volumeEmLitros = novo.getVolumeDeCombustívelNoTanqueEmLitros();
+        double combustívelNoTanqueEmLitros = novo.getCombustívelNoTanqueEmLitros();
 
-        System.out.println("O carro está ligado? " + carroLigado + ", combustivel no tanque= " + volumeEmLitros);
+        System.out.println(
+                "O carro está ligado? " + carroLigado + ", combustivel no tanque= " + combustívelNoTanqueEmLitros);
     }
+
 }
