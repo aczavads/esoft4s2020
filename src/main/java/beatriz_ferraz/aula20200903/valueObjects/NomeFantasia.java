@@ -4,7 +4,7 @@ public class NomeFantasia {
     private String valor;
 
     public NomeFantasia(String valor){
-        if (null == valor || valor.trim().length() == 0) {
+        if (null == valor || valor.trim().length() <= 1) {
             throw new RuntimeException("Nome deve ter mais que um caracter.");
         }
         this.valor = valor;
