@@ -1,4 +1,4 @@
-package aula20200908.associações;
+package tiago_lopes_barcelos.aula20200908.associações;
 
 import java.util.ArrayList;
 import java.util.List;
