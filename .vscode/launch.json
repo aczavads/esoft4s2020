@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "arthur_cattaneo_zavadski.aula20200820.App",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppIntrodução<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "aula20200728.introdução.AppIntrodução",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<esoft4s2020>(1)",
+            "request": "launch",
+            "mainClass": "aula20200730.App",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppIntrodução<esoft4s2020>(1)",
+            "request": "launch",
+            "mainClass": "aula20200730.introdução.AppIntrodução",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppIntroduçãoEncapsulamento<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "aula20200730.introduçãoEncapsulamento.AppIntroduçãoEncapsulamento",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppExemploCompleto<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "aula20200804.exemploCompleto.AppExemploCompleto",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppMétodos<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "aula20200818.métodos.AppMétodos",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<esoft4s2020>(2)",
+            "request": "launch",
+            "mainClass": "aula20200820.App",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppCarro<esoft4s2020>",
+            "request": "launch",
+            "mainClass": "magno_toniolo.aula20200825.carro.AppCarro",
+            "projectName": "esoft4s2020"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AppCarro<esoft4s2020>(1)",
+            "request": "launch",
+            "mainClass": "magno_toniolo.aula20200901.AppCarro",
+            "projectName": "esoft4s2020"
+        }
+    ]
+}
