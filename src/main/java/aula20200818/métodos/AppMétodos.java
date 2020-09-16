@@ -20,7 +20,7 @@ public class AppMétodos {
     }
 
     private static boolean métodoComRetorno() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5;) {
             if (System.currentTimeMillis()%2 == 0) {
                 return true;
             } else {

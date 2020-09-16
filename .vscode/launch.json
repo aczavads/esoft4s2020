@@ -6,6 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AppColeções",
+            "request": "launch",
+            "mainClass": "main.java.magno_toniolo.aula20200910.coleções.AppColeções"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AppCarro",
+            "request": "launch",
+            "mainClass": "magno_toniolo.aula20200901.carro.AppCarro"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AppAssociações",
+            "request": "launch",
+            "mainClass": "aula20200908.associações.AppAssociações"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
