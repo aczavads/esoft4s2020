@@ -1,7 +1,5 @@
 package magno_toniolo.aula20200915.atividade_avaliativa;
 
-import java.util.List;
-
 public class AppTimeDeFutebol {
 
     public static void main(String[] args) {
