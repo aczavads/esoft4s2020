@@ -1,7 +1,5 @@
 package magno_toniolo.aula20200915.atividade_avaliativa;
 
-import aula20200908.associações.Endereço;
-
 public class TitulosBrasileiros {
     private String titulo;
     private int quantidadeDeVezesQueGanhou;
