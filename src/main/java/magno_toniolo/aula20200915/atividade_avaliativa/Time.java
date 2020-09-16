@@ -3,8 +3,9 @@ package magno_toniolo.aula20200915.atividade_avaliativa;
 public class Time {
     
     private String nome;
-    JogadorPrincipal jogadoresDoTime = new JogadorPrincipal();
+    Jogadores jogadoresDoTime = new Jogadores();
     Estadio estadioDoTime = new Estadio();
-    private int titulosBrasileirão;
+    TitulosBrasileiros titulos = new TitulosBrasileiros();
 
+    
 }

@@ -1,6 +1,8 @@
 package magno_toniolo.aula20200908.associações;
 
 public class Endereço {
+	private String logradouro;
+    private String número;
 
     public Endereço(String logradouro, String número) {
         this.logradouro = logradouro;
@@ -14,8 +16,7 @@ public class Endereço {
     }
     @Override
     public String toString() {
-        return "E";
+        return "Endereço [logradouro=" + logradouro + ", número=" + número +"]";
     }
-
 
 }
