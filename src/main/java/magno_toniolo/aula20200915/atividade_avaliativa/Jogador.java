@@ -3,7 +3,6 @@ package magno_toniolo.aula20200915.atividade_avaliativa;
 public class Jogador {
     private String nome;
     private int numeroDaCamisa; 
-    private boolean camisa10;
 
     public Jogador (String nome, int numeroDaCamisa) {
         this.nome = nome;
