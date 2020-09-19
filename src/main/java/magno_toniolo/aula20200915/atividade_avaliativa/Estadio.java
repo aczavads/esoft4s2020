@@ -5,11 +5,11 @@ public class Estadio {
     private String cidade;
     private String estado;
 
-    public Estadio (String nomeEstadio, String cidade, String estado) {
+    public Estadio(String nomeEstadio, String cidade, String estado) {
         this.nomeEstadio = nomeEstadio;
         this.cidade = cidade;
         this.estado = estado;
-        if (nomeEstadio.length() < 5)     {
+        if (nomeEstadio.length() < 5) {
             throw new RuntimeException("Digite um nome de estádio válido.");
         }
         if (cidade.length() < 4) {

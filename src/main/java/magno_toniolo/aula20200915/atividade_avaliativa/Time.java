@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Time {
-    
+
     private String nome;
     private List<Jogador> jogadoresDoTime = new ArrayList<>();
     private Estadio estadioDoTime;
@@ -18,7 +18,7 @@ public class Time {
         return nome;
     }
 
-    public void addJogador (Jogador novoJogador) {
+    public void addJogador(Jogador novoJogador) {
         this.jogadoresDoTime.add(novoJogador);
     }
 
@@ -26,7 +26,7 @@ public class Time {
         return jogadoresDoTime;
     }
 
-	public void addTitulo(TitulosBrasileiros novoTitulo) {
+    public void addTitulo(TitulosBrasileiros novoTitulo) {
         this.titulosBrasileiros.add(novoTitulo);
     }
 
@@ -37,10 +37,11 @@ public class Time {
     public Estadio getEstadioDoTime() {
         return estadioDoTime;
     }
+
     public void setEstadioDoTime(Estadio estadioDoTime) {
         this.estadioDoTime = estadioDoTime;
     }
-    
+
     @Override
     public String toString() {
         return (nome.toUpperCase());
