@@ -20,9 +20,5 @@ public class Pagamento {
             throw new RuntimeException("Estado de pagamento inválido.");
         }
         this.estadoDoPagamento = estadoDoPagamento;
-    }
-
- 
-
-    
+    }   
 }
