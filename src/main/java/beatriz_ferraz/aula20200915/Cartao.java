@@ -4,6 +4,10 @@ public class Cartao extends Pagamento {
 
     private long numeroDoCartao;
     
+    public Cartao(){
+        super();
+    }
+
     public Cartao(String estadoDoPagamento, long numeroDoCartao) {
         super(estadoDoPagamento);
         this.numeroDoCartao = numeroDoCartao;

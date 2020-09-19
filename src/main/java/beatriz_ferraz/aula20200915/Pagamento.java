@@ -3,6 +3,10 @@ package beatriz_ferraz.aula20200915;
 public class Pagamento {
     private String estadoDoPagamento;
 
+    public Pagamento(){
+
+    }
+    
     public Pagamento(String estadoDoPagamento){
         setEstadoDoPagamento(estadoDoPagamento);
     }
@@ -17,4 +21,8 @@ public class Pagamento {
         }
         this.estadoDoPagamento = estadoDoPagamento;
     }
+
+ 
+
+    
 }
