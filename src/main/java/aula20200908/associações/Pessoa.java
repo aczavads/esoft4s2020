@@ -41,7 +41,7 @@ public class Pessoa {
     private boolean temEndereço(Endereço endereçoProcurado) {
         boolean achouEndereço = false;
         for (Endereço e : this.endereços) {
-            final boolean logradouroIgual = e.getLogradouro().equals(endereçoProcurado.getLogradouro();
+            final boolean logradouroIgual = e.getLogradouro().equals(endereçoProcurado.getLogradouro());
             final boolean númeroIgual = e.getNúmero().equals(endereçoProcurado.getNúmero());
             if (logradouroIgual && númeroIgual) {
                 achouEndereço = true;
