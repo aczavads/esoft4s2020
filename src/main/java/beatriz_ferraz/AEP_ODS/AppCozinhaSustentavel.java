@@ -5,9 +5,7 @@ public class AppCozinhaSustentavel {
         
         System.out.println("Testando...");
         Receita novaReceita = new Receita("Chips de casca de abóbora","[lorem ipsum etc]");
-       /*Avaliacao novaAvaliacao = new Avaliacao(4, " ");
-        System.out.println("Avaliação: " + novaAvaliacao.getNota() + " estrelas.");*/
-
+       
         PalavraChave abobora = new PalavraChave("abobora");
         PalavraChave casca = new PalavraChave("casca");
         PalavraChave snacks = new PalavraChave("snacks");
@@ -17,5 +15,12 @@ public class AppCozinhaSustentavel {
         novaReceita.addPalavraChave(casca);
         novaReceita.addPalavraChave(snacks);
         System.out.println(novaReceita);
+
+        Avaliacao novaAvaliacao = new Avaliacao(4, " ");
+        System.out.println("Avaliação: " + novaAvaliacao.getNota() + " estrelas.");
+
+        /*Usuario novoUsuario = new Usuario("Ana Clara", "123456");
+        System.out.println("Nome do usuário: " + novoUsuario.getNome()
+                            + "\nSenha: " + novoUsuario.getSenha()); */   
     }
 }

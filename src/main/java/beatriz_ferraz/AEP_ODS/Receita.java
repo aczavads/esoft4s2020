@@ -8,8 +8,7 @@ public class Receita {
     private String titulo;
     private String texto;
     private List<PalavraChave> palavrasChave = new ArrayList<>(); 
-    private List<Avaliacao> avaliacoes = new ArrayList<>();
-    private double mediaDasAvaliacoes;
+    //private List<Avaliacao> avaliacoes = new ArrayList<>();
 
     public Receita (String titulo, String texto) {
         setTitulo(titulo);
@@ -39,9 +38,9 @@ public class Receita {
         this.palavrasChave.add(novaPalavraChave);
     }
 
-    public void addAvaliacoes(Avaliacao novaAvaliacao) {
+   /* public void addAvaliacoes(Avaliacao novaAvaliacao) {
         this.avaliacoes.add(novaAvaliacao);
-    }
+    }*/
 
     @Override
     public String toString() {
