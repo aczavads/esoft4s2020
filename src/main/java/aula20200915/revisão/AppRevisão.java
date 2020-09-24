@@ -14,6 +14,10 @@ public class AppRevisão {
         System.out.println(unicesumarMaringa.getNome());
         System.out.println(unicesumarCuritiba.getNome());
         System.out.println(bibliotecaComoObject.toString());
+        System.out.println("Novo teste");
+        for (String string : args) {
+            System.out.println(string);
+        }
     }
     
 }
