@@ -25,8 +25,8 @@ public class Usuario {
     }
 
     public void setSenha(String senha) {
-        if (senha == null || senha.trim().length() < 6 ) {
-            throw new RuntimeException("Senha deve ter ao menos 6 caracteres.");
+        if (senha == null || senha.trim().length() < 6 ||  senha.trim().length() > 12) {
+            throw new RuntimeException("Senha deve ter entre 6 e 12 caracteres.");
         }
         this.senha = senha;
     }

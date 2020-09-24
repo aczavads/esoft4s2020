@@ -8,7 +8,7 @@ public class Receita {
     private String titulo;
     private String texto;
     private List<PalavraChave> palavrasChave = new ArrayList<>(); 
-    //private List<Avaliacao> avaliacoes = new ArrayList<>();
+    private PalavraChave palavraPesquisada; 
 
     public Receita (String titulo, String texto) {
         setTitulo(titulo);
@@ -38,10 +38,6 @@ public class Receita {
         this.palavrasChave.add(novaPalavraChave);
     }
 
-   /* public void addAvaliacoes(Avaliacao novaAvaliacao) {
-        this.avaliacoes.add(novaAvaliacao);
-    }*/
-
     @Override
     public String toString() {
         String stringPalavrasChave = "Palavras-chave: ";
@@ -52,5 +48,25 @@ public class Receita {
         return "Título da Receita: " + titulo + "\n" 
                 + "Texto: " + texto + "\n"
                 + stringPalavrasChave.substring(0,stringPalavrasChave.length());
+    }
+
+    public void existemReceitasComEssaPalavraChave(PalavraChave palavraPesquisada) {
+        boolean achouPalavra = false;
+        for (PalavraChave p : this.palavrasChave) {
+            final boolean palavraIgual = p.getPalavra().equals(palavraPesquisada.getPalavra());
+            if(palavraIgual) {
+                achouPalavra = true;
+                System.out.println("Existem receitas relacionadas a " + palavraPesquisada + ".");
+                break;
+            } 
+        }
+        if(!achouPalavra) {
+            throw new RuntimeException("Nenhum resultado encontrado.");
+        }
+        this.palavraPesquisada =  palavraPesquisada;
+    }
+
+    public PalavraChave getExistemReceitasComEssaPalavraChave() {
+        return palavraPesquisada;
     }
 }

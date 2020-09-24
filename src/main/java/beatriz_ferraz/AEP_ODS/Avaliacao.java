@@ -26,6 +26,9 @@ public class Avaliacao {
     }
 
     public void setComentario(String comentario) {
+        if(comentario.length() > 1000) {
+            throw new RuntimeException("Comentário não deve ultrapassar 1000 caracteres.");
+        }
         this.comentario = comentario;
     }
 }
