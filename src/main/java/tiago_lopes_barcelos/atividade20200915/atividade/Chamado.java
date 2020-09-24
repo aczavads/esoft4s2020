@@ -16,7 +16,6 @@ public class Chamado {
         return natureza;
     }
 
-    @Override
     public String toString() {
         return "Chamado [Natureza = " + natureza +"]";
     }

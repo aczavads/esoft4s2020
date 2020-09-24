@@ -1,7 +1,5 @@
 package tiago_lopes_barcelos.atividade20200915.atividade;
 
-
-
 public class AppEmergência {
 
     public static void main(String[] args) {

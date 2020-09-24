@@ -6,8 +6,8 @@ import java.util.List;
 public class Paciente {
     
     private String nome;
-    private List<Chamado> chamados = new ArrayList<>();
-    private Chamado chamadoPrincipal;
+    List<Chamado> chamados = new ArrayList<>();
+    private Chamado primeiroChamado;
 
     public Paciente(String nome) {
         this.nome = nome;
@@ -30,14 +30,14 @@ public class Paciente {
         
         return "Paciente [Nome: " + nome + "," 
             + stringChamados.substring(0, stringChamados.length()-1)
-            + ", Chamado: " + chamadoPrincipal + "]";
+            + ", Chamado: " + primeiroChamado + "]";
     }
 
-	public void setChamadoPrincipal(Chamado chamadoPrincipal) {
-        if (equals(chamadoPrincipal)) {
+	public void setprimeiroChamado(Chamado primeiroChamado) {
+        if (equals(primeiroChamado)) {
             throw new RuntimeException ("Chamado em duplicidade.");
         }
-        this.chamadoPrincipal = chamadoPrincipal;
+        this.primeiroChamado = primeiroChamado;
     }
 
     private boolean equals(Chamado chamadoProcurado) {
@@ -52,7 +52,7 @@ public class Paciente {
         return achouChamado;
         
     }
-    public Chamado getChamadoPrincipal(){
-        return chamadoPrincipal;
+    public Chamado getprimeiroChamado(){
+        return primeiroChamado;
     }
 }
