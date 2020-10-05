@@ -2,10 +2,10 @@ package aula20200728.introdução;
 
 public class Elefante {
 	//Atributos do Elefante: entendam como os campos que vocês definiam nos structs com o Marcello em C.
-	private String nome;
+	private final String nome;
 	
 	//construtor: elemento que é invocado(chamado) no momento da construção do objeto, ou seja, quando usamos o "new"
-	public Elefante(String paramNome) {
+	public Elefante(final String paramNome) {
 		this.nome = paramNome;
 	}
 	
