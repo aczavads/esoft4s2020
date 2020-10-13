@@ -11,8 +11,12 @@ public class Carro {
         volumeDeCombustívelNoTanqueEmLitros -= 0.05;
         ligado = true; 
 	}
-	public boolean isLigado() {
-		return ligado;
+	public void isLigado() {
+		if (ligado = false) {
+			ligado = true;
+		} else {
+			ligado = false;
+		}
 	}
 	public double getVolumeDeCombustívelNoTanqueEmLitros() {
 		return volumeDeCombustívelNoTanqueEmLitros;

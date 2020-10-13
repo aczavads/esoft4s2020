@@ -1,4 +1,4 @@
-package aula20200924.revisão;
+package magno_toniolo.aula20200924.revisão;
 
 public class Disciplina {
 
