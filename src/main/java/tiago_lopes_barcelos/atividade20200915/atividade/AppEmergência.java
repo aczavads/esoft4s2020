@@ -4,7 +4,7 @@ public class AppEmergência {
 
     public static void main(String[] args) {
         
-    Paciente joaquim = new Paciente ("Joaquim Silva");
+    Paciente joaquim = new Paciente ("Joaquim Silva"); 
 
     Chamado emergênciaAmbulância = new Chamado("Acidente Auto x Moto");
     Chamado emergênciaAmbulância2 = new Chamado("Acidente Auto x Moto");
