@@ -1,0 +1,10 @@
+Primeiramente, criei a classe principal e em seguida, criei o Value Object "EmailVO".
+Criei também a classe abstrata Pessoa e as duas heranças: Física e Jurídica.
+
+Entretanto professor, não consegui desenvolver como tratar as composições (no caso os tipos de pessoa).
+O jeito que fiz foi, dentro das Classes Físicas e Jurídica, coloquei os respectivos tipos de pessoas para cada (Cliente e Vendedor para Física; Tranportadora e Fornecedor para Jurídica).
+Não sei se é a maneira correta, mas foi como fiz.
+
+A parte que mais me deixou confuso foi como você fez o diagrama, por deixa as composições na classe Pessoa e não na Física e Jurídica (lembro de você ter comentado na aula que prefere dessa forma).
+
+Os métodos da classes abstrata foram feitos diretamente, eu os criei dentro da classe Pessoa. Mas denovo, fiquei confuso em como funcionaria isso. Não consegui entender totalmente o problema, mas o código ficou de acordo com o meu entendimento do diagrama de classes.
