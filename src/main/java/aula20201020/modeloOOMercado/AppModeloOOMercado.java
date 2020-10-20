@@ -18,6 +18,7 @@ public class AppModeloOOMercado {
 
         wilson.assumirPapel(new Reitor("ATO_2020_023A"));
         wilson.assumirPapel(new Cliente(10.00, 1_000_000.00));
+        wilson.assumirPapel(new Cliente(10.00, 1_000_000.00));
         //aqui deve lançar uma RuntimeException: não pode ter o mesmo tipo de papel mais de uma vez!
         wilson.assumirPapel(new Reitor("ATO_2020_023A")); 
 
