@@ -6,6 +6,7 @@ public class Cliente extends Papel {
     private double limiteDeCrédito;
 
     public Cliente(double desconto, double limiteDeCrédito) {
+        super();
         this.desconto = desconto;
         this.limiteDeCrédito = limiteDeCrédito;
     }
