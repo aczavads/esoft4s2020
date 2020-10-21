@@ -27,6 +27,11 @@ public abstract class Pessoa {
     }
 
     public void assumirPapel(Papel papel) {
+        for (Papel papelExistente : papéis) {
+            if (papelExistente.getClass().equals(papel.getClass())) {
+                throw new RuntimeException("Esta pessoa já possuí o papel [" + papel.getClass().getSimpleName()  +"]");
+            }
+        }
         this.papéis.add(papel);
     }
    
