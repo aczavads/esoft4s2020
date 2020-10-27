@@ -10,6 +10,7 @@ public class AppJDBC {
     public static void main(String[] args) {
         try {
             long inicio = System.currentTimeMillis();
+            String exemploUrlSQLServer = "jdbc:sqlserver://localhost;databaseName=NOME_DO_BANCO;user=NOME_USUÁRIO;password=SENHA";
             Connection conn = DriverManager.getConnection(
                 "jdbc:postgresql://localhost:5432/esoft4s2020", "postgres", "postgres");
             conn.setAutoCommit(false);
