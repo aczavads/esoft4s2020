@@ -20,5 +20,12 @@
 			<version>42.2.18</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>9.1.0.jre11-preview</version>
+		</dependency>
+
 	</dependencies>
 </project>
