@@ -18,24 +18,26 @@ public class AppJDBC {
                 "jdbc:postgresql://localhost:5432/esoft4s2020", "postgres", "postgres");
             conn.setAutoCommit(false);
 
-            Statement createTable =  conn.createStatement();                
-            createTable.executeUpdate("create table if not exists produto ("
-                +" id bigint not null primary key," 
-                +" descricao varchar(255) not null unique," 
-                +" preco numeric(10,2))");
-            createTable.close();
+            try (Statement createTable =  conn.createStatement();) {
+                createTable.executeUpdate("create table if not exists produto ("
+                    +" id bigint not null primary key," 
+                    +" descricao varchar(255) not null unique," 
+                    +" preco numeric(10,2))");
+            }               
+            //createTable.close();
 
-            PreparedStatement insertProduto = conn
-                .prepareStatement("insert into produto (id, descricao, preco) values (?,?,?)");
+            try (PreparedStatement insertProduto = conn
+                .prepareStatement("insert into produto (id, descricao, preco) values (?,?,?)");) {
+                    for (int i = 1; i <= 1_000; i++) {
+                        long novoId = System.nanoTime();
+                        insertProduto.setLong(1, novoId);
+                        insertProduto.setString(2, "Produto Descrição Boa, número " + novoId );
+                        insertProduto.setDouble(3, 2.25 * i);
+                        insertProduto.executeUpdate();
+                    }            
+                    //insertProduto.close();
+                }
             
-            for (int i = 1; i <= 1_000; i++) {
-                long novoId = System.nanoTime();
-                insertProduto.setLong(1, novoId);
-                insertProduto.setString(2, "Produto Descrição Boa, número " + novoId );
-                insertProduto.setDouble(3, 2.25 * i);
-                insertProduto.executeUpdate();
-            }            
-            insertProduto.close();
             conn.commit();
 
             Statement selectMaxId = conn.createStatement();
