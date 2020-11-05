@@ -1,1 +1,6 @@
 target/
+.settings/
+.project
+.classpath
+.vscode
+src/main/resources/*.lock
