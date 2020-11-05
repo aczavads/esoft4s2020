@@ -21,4 +21,10 @@ public class RepositórioDePilhaEmMemória implements RepositórioDePilha {
         return new ArrayList<>(dados.values());
     }
 
+    @Override
+    public void close() throws Exception {
+        System.out.println("RepositórioDePilhaEmMemória fechando!!! :)");
+        dados.clear();
+    }
+
 }

@@ -20,6 +20,7 @@ public class GerenciadorDeConexão implements AutoCloseable {
 
     @Override
     public void close() throws Exception {
+        System.out.println("GerenciadorDeConexão fechando! :)");
         if (conexão != null) {
             conexão.close();
         }
