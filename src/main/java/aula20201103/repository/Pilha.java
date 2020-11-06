@@ -9,13 +9,21 @@ public class Pilha {
     private String modelo;
     private int amperagem;
 
-    public Pilha(String marca, String modelo, int amperagem) {
+    public Pilha() {
         id = UUID.randomUUID().toString();
+    }
+
+    public Pilha(String marca, String modelo, int amperagem) {
+        this();
         this.marca = marca;
         this.modelo = modelo;
         this.amperagem = amperagem;
     }
-    public int getAmperagem() {
+    public Pilha(String id, String marca, String modelo, int amperagem) {
+        this(marca, modelo, amperagem);
+        this.id = id;
+	}
+	public int getAmperagem() {
         return amperagem;
     }
     public String getMarca() {

@@ -3,12 +3,11 @@ package aula20201103.repository;
 public class AppRepository {
 
     public static void main(String[] args)  {
-        try (GerenciadorDeConexão gerenciadorConexão = new GerenciadorDeConexão()) {
-            RepositórioDePilha pilhaRepo = new RepositórioDePilhaEmMemória(); 
-            //Vocês tem que fazer a linha abaixo funcionar, com persistência no banco! :)
-            //RepositórioDePilha pilhaRepo = new RepositórioDePilhaJDBC(gerenciadorConexão.getConexão()); 
-
-
+        try (GerenciadorDeConexão gerenciadorConexão = new GerenciadorDeConexão(); 
+             //RepositórioDePilha pilhaRepo = new RepositórioDePilhaEmMemória();
+             RepositórioDePilha pilhaRepo = new RepositórioDePilhaJDBC(gerenciadorConexão.getConexão());
+             ) {
+             
             Pilha philipsAAARecarregável = new Pilha("Philips", "AAA", 950);
             Pilha snoyAARecarregável = new Pilha("Sony", "AA", 2450);
 
