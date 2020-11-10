@@ -9,10 +9,10 @@ public class AppRepository {
              ) {
              
             Pilha philipsAAARecarregável = new Pilha("Philips", "AAA", 950);
-            Pilha snoyAARecarregável = new Pilha("Sony", "AA", 2450);
-
+            Pilha sonyAARecarregável = new Pilha("Sony", "AA", 2450);
+            
             pilhaRepo.incluir(philipsAAARecarregável);
-            pilhaRepo.incluir(snoyAARecarregável);
+            pilhaRepo.incluir(sonyAARecarregável);
 
             for (Pilha p : pilhaRepo.obterTodas()) {
                 System.out.println(p.toString());
