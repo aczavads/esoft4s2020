@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
 import aula20201112.modeloOOMercadoPersistente.BaseEntity;
@@ -24,6 +25,7 @@ public abstract class Pessoa extends BaseEntity{
     
     //@Transient
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "pessoa_id")
     private Set<Papel> papéis = new HashSet<>();
 
     public Pessoa() {

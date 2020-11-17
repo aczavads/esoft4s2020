@@ -10,6 +10,7 @@ import aula20201112.modeloOOMercadoPersistente.pedido.PedidoService;
 import aula20201112.modeloOOMercadoPersistente.pessoa.Fisica;
 import aula20201112.modeloOOMercadoPersistente.pessoa.Pessoa;
 import aula20201112.modeloOOMercadoPersistente.pessoa.PessoaService;
+import aula20201112.modeloOOMercadoPersistente.pessoa.papel.Cliente;
 import aula20201112.modeloOOMercadoPersistente.produto.Produto;
 import aula20201112.modeloOOMercadoPersistente.produto.ProdutoService;
 
@@ -50,8 +51,8 @@ public class AppModeloOOMercadoPersistente implements CommandLineRunner {
 
 
         Pedido pedido01 = new Pedido(1, f);
-        Produto p1 = produtoService.findById("22d7dfac-d85f-4f30-b20f-84706bdd20c8");
-        Produto p2 = produtoService.findById("3707fae2-96cd-4c42-8bca-a05677e7263a");
+        Produto p1 = produtoService.findById("f7b13e25-f00f-4795-86d0-8d31969c5e70");
+        Produto p2 = produtoService.findById("f105510b-e5f4-4a91-938a-71af86078998");
         pedido01.adicionarItem(p1, 2, 29.90);
         pedido01.adicionarItem(p2, 3, 19.80);
         pedidoService.save(pedido01);
