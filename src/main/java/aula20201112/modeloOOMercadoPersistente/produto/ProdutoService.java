@@ -24,4 +24,8 @@ public class ProdutoService {
 		return repo.findAll();
 	}
 
+	public Produto findById(String id) {
+		return repo.findById(id).get();
+	}
+
 }

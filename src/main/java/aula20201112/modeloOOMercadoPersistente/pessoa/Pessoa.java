@@ -1,7 +1,9 @@
 package aula20201112.modeloOOMercadoPersistente.pessoa;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -22,7 +24,7 @@ public abstract class Pessoa extends BaseEntity{
     
     //@Transient
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private List<Papel> papéis = new ArrayList<>();
+    private Set<Papel> papéis = new HashSet<>();
 
     public Pessoa() {
         super();
@@ -74,7 +76,7 @@ public abstract class Pessoa extends BaseEntity{
     }
     
     public List<Papel> getPapéis() {
-        return papéis;
+        return new ArrayList<>(papéis);
     }
 
 }
