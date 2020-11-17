@@ -1,10 +1,13 @@
 package aula20201110.springBootJpa;
 
+import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Vinho {
@@ -14,16 +17,24 @@ public class Vinho {
     private String variedade;
     private String nome;
 
+    @Temporal(TemporalType.DATE)
+    private Date envasadoEm;
+
     public Vinho() {
         super();
         this.id = UUID.randomUUID().toString();
     }
 
-    public Vinho(String nome, String variedade, int ano) {
+    public Vinho(String nome, String variedade, int ano, Date envasadoEm) {
         this();
         this.nome = nome;
         this.variedade = variedade;
         this.ano = ano;
+		this.envasadoEm = envasadoEm;
+    }
+
+    public Date getEnvasadoEm() {
+        return envasadoEm;
     }
 
     public String getId() {
@@ -54,6 +65,10 @@ public class Vinho {
         this.variedade = variedade;
     }
 
+    public void setEnvasadoEm(Date envasadoEm) {
+        this.envasadoEm = envasadoEm;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -75,6 +90,7 @@ public class Vinho {
         return "{" +
             " id='" + getId() + "'" +
             ", ano='" + getAno() + "'" +
+            ", envasadoEm='" + getEnvasadoEm() + "'" +
             ", variedade='" + getVariedade() + "'" +
             ", nome='" + getNome() + "'" +
             "}";
