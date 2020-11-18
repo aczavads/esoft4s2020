@@ -3,18 +3,35 @@ package aula20201112.modeloOOMercadoPersistente.pedido;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 import aula20201112.modeloOOMercadoPersistente.BaseEntity;
 import aula20201112.modeloOOMercadoPersistente.pessoa.Pessoa;
 import aula20201112.modeloOOMercadoPersistente.pessoa.PessoaNãoClienteException;
 import aula20201112.modeloOOMercadoPersistente.produto.Produto;
 
+@Entity
 public class Pedido extends BaseEntity {
     private Integer número;
+    
+    @ManyToOne
     private Pessoa cliente;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "pedido_id")
     private List<ItemPedido> itens = new ArrayList<>();
 
-    public Pedido(Integer número, Pessoa cliente) {        
+    public Pedido() {
         super();
+    }
+
+    public Pedido(Integer número, Pessoa cliente) {        
+        this();
         if (!cliente.isCliente()) {
             throw new PessoaNãoClienteException("Pessoas sem o papel de Cliente não podem fazer pedidos!");
         }
