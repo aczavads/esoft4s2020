@@ -2,6 +2,9 @@ package aula20201103.repository;
 
 import java.util.UUID;
 
+import lombok.Data;
+
+@Data
 public class Pilha {
 
     private String id;
@@ -23,20 +26,5 @@ public class Pilha {
         this(marca, modelo, amperagem);
         this.id = id;
 	}
-	public int getAmperagem() {
-        return amperagem;
-    }
-    public String getMarca() {
-        return marca;
-    }
-    public String getModelo() {
-        return modelo;
-    }
-    public String getId() {
-        return id;
-    }
-    public String toString() {
-        return "Pilha [marca=" + marca + "], modelo=" + modelo + "], amperagem=" + amperagem + "]";
-    }
 
 }
