@@ -2,9 +2,9 @@ package tiago_lopes_barcelos.atividade_Avaliativa.aplicacao;
 
 import java.util.Scanner;
 
-import entidades.ContaEmpresa;
-import entidades.ContaPoupanca;
-import entidades.ContaUnitaria;
+import tiago_lopes_barcelos.atividade_Avaliativa.entidades.ContaEmpresa;
+import tiago_lopes_barcelos.atividade_Avaliativa.entidades.ContaPoupanca;
+import tiago_lopes_barcelos.atividade_Avaliativa.entidades.ContaUnitaria;
 
 
 public class AppTransacaoBancaria {
